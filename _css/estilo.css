@@ -1,0 +1,347 @@
+@charset "UTF-8";
+<style>
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+</style> 
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+p{
+			text-align: justify;
+			text-indent: 50px;
+		}
+p#menu{
+		text-align: justify;
+		text-indent: 50px;
+		color:"Blue"; 
+}
+a{
+		color: #606060;
+		text-decoration: none;	
+		}		
+a:hover{
+	text-decoration: underline;
+}
+		
+body{
+			font-family: Arial, sans-serif;
+			background-color: hsla(165, 82%, 93%, 0.5);
+			color: rgba(1,0,0,1);
+		}
+/*
+header#cabecalho{
+	background-color: #FF8C00;
+}	
+	*/
+/*
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150 px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat  0px 80px;
+}*/
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+		
+div#interface{
+	display:inline-block;
+	width: 1000px;
+	height:950px;
+	background-color: #EEE5DE;
+	margin: 0px 0px 0px 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+	padding: 10px 10px 10px 10px;
+}
+		
+/*Formatação de imagens com legendas*/
+figure.foto-legenda {
+	border: 8px solid black;
+	box-shadow: 1px 1px 4px black;
+	position: relative;
+}
+
+figure.foto-legenda img {
+		width: 100%;
+		height: 100%;
+}
+
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*Formatação do Menu*/
+img#logo_topo{
+	vertical-align: super;
+	
+}
+nav#menu{
+	display: block;
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu h1{
+	display: none;
+}
+
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+nav#menus a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Menu alternativo*/
+nav#menu_principal{
+	display: block;
+}
+
+section#corpo {
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+
+
+article#noticia-principal h2 {
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 0px;
+	margin:10px 0px 10px 0px;
+}
+
+
+
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+	font-size: 12px;
+	color: #606060;
+	
+}
+
+
+
+.direita{
+	text-align: right;
+}
+
+
+
+table#formacoes {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#formacoes tr {
+	font-style: 10px;
+}
+table#formacoes td {
+	border: 1px solid #606060;
+	padding: 10px;
+	
+}
+table#formacoes td.ce{
+	color: #ffffff;
+	background-color: #ffa500;
+	vertical-align: top;
+	font-weight: bold;
+	
+}
+
+table#formacoes td.faltou{
+	color: #ff0000;
+}
+
+table#formacoes td.credito{
+	color: #32cd32;
+}
+
+
+table#formacoes td.semana{
+	color: #ffffff;
+	background-color: #20b2aa;
+}
+
+table#formacoes caption{
+	color: #888888;
+	font-size: 16pt;
+	font-weight: bolder;
+}
+table#formacoes caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+
+table#formacoes {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#formacoes td {
+	border: 1px solid #606060;
+	padding: 10px;
+	
+}
+table#formacoes td.ce{
+	color: #ffffff;
+	background-color: #ffa500;
+	vertical-align: top;
+	font-weight: bold;	
+}
+table#formacoes td.ferias{
+	color: #008b8b;
+}
+
+
+table#interacoes td.faltou{
+	color: #ff0000;
+}
+
+table#interacoes td.credito{
+	color: #32cd32;
+}
+table#interacoes td.ferias{
+	color: #008b8b;
+}
+
+table#interacoes td.semana{
+	color: #ffffff;
+	background-color: #20b2aa;
+}
+
+table#interacoes caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+table#interacoes caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+table#interacoes {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#interacoes td {
+	border: 1px solid #606060;
+	padding: 10px;
+	
+}
+table#interacoes td.ce{
+	color: #ffffff;
+	background-color: #ffa500;
+	vertical-align: top;
+	font-weight: bold;
+	
+}
+
+
+aside#lateral{
+	display: block;
+	width: 455px;
+	Height: 950px;
+	float: right;
+	background-color: #ddddda;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+	position: relative;
+	left: 0px;
+	top:-950px;
+
+}
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+	background-color: #dddddd;
+	padding: 10px;
+}
+
+
+
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p{
+	text-align: center;
+}
